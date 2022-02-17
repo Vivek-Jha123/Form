@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css">
+
+    
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+
+</head>
+<body>
+    
+
+<div class="form_card">
+    <form class="ui form">
+        <h3>Basic Info:</h3>
+        <div class="field">
+          <label>Title</label>
+          <input type="text" name="first-name" placeholder="Enter title">
+        </div>
+        <div class="field">
+          <label>Img Upload</label>
+          <input type="file" onchange="preview()" >
+          
+        </div>
+        
+        <div class="field">
+            <label>Service Description</label>
+            <textarea ></textarea>
+          </div>
+
+          <!-- Our Clients -->
+       <h3>Our Clients:</h3>
+       <div class="field">
+        <label>Client Description</label>
+        <input type="text" name="first-name" placeholder="Enter Description">
+      </div>
+
+      <!-- Rating -->
+      <div class="field">
+        <label>Rating</label>
+        <div class="star-rating">
+            <input type="radio" id="5-stars" name="rating" value="5" />
+            <label for="5-stars" class="star">&#9733;</label>
+            <input type="radio" id="4-stars" name="rating" value="4" />
+            <label for="4-stars" class="star">&#9733;</label>
+            <input type="radio" id="3-stars" name="rating" value="3" />
+            <label for="3-stars" class="star">&#9733;</label>
+            <input type="radio" id="2-stars" name="rating" value="2" />
+            <label for="2-stars" class="star">&#9733;</label>
+            <input type="radio" id="1-star" name="rating" value="1" />
+            <label for="1-star" class="star">&#9733;</label>
+          </div>
+       
+<!-- <fieldset class="rating">
+    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+
+</fieldset> -->
+          
+      </div>
+      <div class="field">
+        <label>Img Upload</label>
+        <input type="file" onchange="preview()" >
+        
+      </div>
+
+      <!-- Our Process -->
+<h3>Our Process:</h3>
+<div class="field">
+    <label>Process Description</label>
+    <input type="text" name="first-name" placeholder="Enter Description">
+  </div>
+
+  <!-- FAQ -->
+
+  <h3>FAQ:</h3>
+<div class="field">
+    <label>FAQ Description</label>
+    <input type="text" name="first-name" placeholder="Enter Description">
+  </div>
+      </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
